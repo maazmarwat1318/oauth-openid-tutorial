@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'oauth-openid-tutorial' title`, () => {
+  it(`should have the 'oauth-tutorial' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('oauth-openid-tutorial');
+    expect(app.title).toEqual('oauth-tutorial');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, oauth-openid-tutorial');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, oauth-tutorial');
   });
 });
